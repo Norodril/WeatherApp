@@ -1,0 +1,4 @@
+#what packages need to be installed
+streamlit
+requests
+python-dotenv
