@@ -8,6 +8,17 @@ from dotenv import load_dotenv
 load_dotenv() #reads the .env file
 API_KEY = os.getenv("OPENWEATHER_API_KEY") #gets the API key from that file to keep API key private
 
+st.markdown(
+  """
+  <style>
+  .stApp {
+    background-image: url("https://raw.githubusercontent.com/Norodril/WeatherApp/refs/heads/main/Image%2010-7-25%20at%2012.21%20PM.jpeg");
+    background-size: cover;
+  }
+  """,
+  unsafe_allow_html = True
+)
+
 st.title("Weather App")
 st.write("Enter a city name or zip code to get the current weather.")
 
